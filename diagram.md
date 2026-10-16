@@ -43,4 +43,5 @@ generated: <今日の日付 YYYY-MM-DD>
 2. 3 の Mermaid コードブロック（```mermaid）
 3. 2 の対応表（コンポーネント → パス）
 
-書き出し後、`git -C ~/Projects/quad add knowledge/projects/<リポジトリ名> && git -C ~/Projects/quad diff --cached --quiet || git -C ~/Projects/quad commit -m "update <リポジトリ名> 構成図"` を実行する。差分がなければコミットは作られない。それで正常。
+書き出し後、次を実行する。差分がなければコミットは作られない。それで正常。
+`git -C ~/Projects/quad add knowledge/projects/<リポジトリ名> && if ! git -C ~/Projects/quad diff --cached --quiet -- knowledge/projects/<リポジトリ名>; then git -C ~/Projects/quad commit -m "update <リポジトリ名> 構成図" -- knowledge/projects/<リポジトリ名>; fi`
