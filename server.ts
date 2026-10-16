@@ -79,7 +79,7 @@ const CLIENT_JS = `
 (async () => {
   const code = document.getElementById('src').textContent;
   const stage = document.getElementById('stage');
-  mermaid.initialize({ startOnLoad: false, securityLevel: 'loose', htmlLabels: false, theme: 'default' });
+  mermaid.initialize({ startOnLoad: false, securityLevel: 'loose', htmlLabels: false, theme: 'default', flowchart: { useMaxWidth: false } });
   try {
     const { svg } = await mermaid.render('arch', code);
     stage.innerHTML = svg;
