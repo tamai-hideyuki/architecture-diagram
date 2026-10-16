@@ -66,7 +66,7 @@ details>summary::-webkit-details-marker{display:none}
 main{padding:0 16px 40px}
 #stage{position:relative;overflow:auto;min-height:60vh}
 #stage.zoom{cursor:grab;overflow:hidden;border:2px dashed #b48cf0;border-radius:8px}
-#stage svg{display:block;margin:0 auto;max-width:100%;height:auto;transform-origin:0 0}
+#stage svg{display:block;margin:0 auto;height:auto;transform-origin:0 0}
 .err{background:#ffe3e3;border:2px solid #c00;padding:12px;border-radius:8px;white-space:pre-wrap;font-family:ui-monospace,monospace}
 .empty{text-align:center;padding:40px;color:#555}
 `;
