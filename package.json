@@ -1,0 +1,14 @@
+{
+  "name": "architecture-diagram",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types server.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.5",
+    "hono": "^4.13.13",
+    "marked": "^18.1.1",
+    "mermaid": "^12.2.0"
+  }
+}
