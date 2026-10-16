@@ -1,6 +1,6 @@
 ---
 description: リポジトリ構成図（Mermaid）を knowledge/projects/<リポ名>/architecture.md に生成する
-allowed-tools: Read, Write, Bash(pwd), Bash(git ls-files:*)
+allowed-tools: Read, Write, Bash(pwd), Bash(git ls-files:*), Bash(git -C ~/Projects/quad add:*), Bash(git -C ~/Projects/quad commit:*)
 ---
 ## 入力
 - リポジトリルート: !`pwd`
@@ -42,3 +42,4 @@ generated: <今日の日付 YYYY-MM-DD>
 1. 1 の説明
 2. 3 の Mermaid コードブロック（```mermaid）
 3. 2 の対応表（コンポーネント → パス）
+書き出し後、`git -C ~/Projects/quad add knowledge/projects/<リポジトリ名> && git -C ~/Projects/quad commit -m "update <リポジトリ名> 構成図"` を実行する。
