@@ -95,8 +95,8 @@ const CLIENT_JS = `
   const zoomBtn = document.getElementById('zoomBtn');
   zoomBtn.onclick = () => {
     on = !on;
-    if (on) { const vb = svgEl.viewBox.baseVal; s = Math.min(stage.clientWidth / vb.width, 1); tx = 0; ty = 0; apply(); }
     stage.classList.toggle('zoom', on);
+    if (on) { stage.scrollLeft = 0; stage.scrollTop = 0; const vb = svgEl.viewBox.baseVal; s = Math.min(stage.clientWidth / vb.width, 1); tx = 0; ty = 0; apply(); }
     zoomBtn.textContent = on ? '\\u26F6 Disable zoom' : '\\u26F6 Enable zoom';
     if (!on) { s = 1; tx = 0; ty = 0; apply(); }
   };
